@@ -1,28 +1,20 @@
 def main():
 
-    endProgram = False
+    #Testing different string constructs
 
+    stringConstruct1 = 'Its possible to use "Double Quotes" Inside Single Quotes'
+    stringConstruct2 = "Its possible to use 'Single Quotes' Inside Double Quotes"
+    stringConstruct3a = '''Using three-single quotes is a thing'''
+    stringConstruct3b = """Using triple-double quotes is a thing too"""
 
-    while endProgram == False:
+    print(stringConstruct1)
+    print(stringConstruct2)
+    print(stringConstruct3a)
+    print(stringConstruct3b)
+    print("Using quotes in the return to the user is a must and I suppose these string abilities lessens the concern for desired result returnability")
 
-        #Asking the user to input a desired printout and then prints it out
-        userInput = input ("Please enter the string you want to be printed out: ")
-        print(userInput)
-
-        #Asking the user if they want to print another input suggestion. Changes all to uppercase for program sesitivity.
-        userDecision = input ("Enter Y to do again.  Enter N to end program: ").upper()
-
-        #Check case.  If any case isn't true...triggers the user to try again
-        while userDecision != "Y" and userDecision != "N":
-            userDecision = input("Sorry, you must enter Y or N. Do you want to continue printing data to the console? ").upper()
-
-
-            if userDecision == "Y" or userDecision == "N":
-                break
-
-        if userDecision == "N":
-
-            endProgram = True
+    stringConstruct4 = "if there is only white space between multiple quotated statements", "It combines both statements as if it were one within parenthesis"
+    print(stringConstruct4)
 
 
 if __name__ == "__main__":
